@@ -1,0 +1,283 @@
+<html>
+	<head>
+		<title>Holiday Resort | Reserve</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Raleway:wght@200&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+		<link href="styles/site.css" type="text/css" rel="stylesheet" />
+		<link href="styles/res.css" type="text/css" rel="stylesheet" />
+
+	</head>
+	<style>
+	fieldset{
+		padding:20px 40px;
+		height:640px;
+}
+
+legend{
+font-size:30px;
+}
+
+.error{
+	color:red;
+}
+
+input[type=text]
+{
+	width:200px;
+	padding:10px;
+}
+input[type=password]
+{
+	margin:2px;
+	width:200px;
+	padding:10px;
+
+}
+input[type=email]
+{
+	margin:2px;
+	width:200px;
+	padding:10px;
+
+}
+input[type=number]
+{
+	margin:2px;
+	width:200px;
+	padding:10px;
+
+}
+input[type=submit]
+{
+	width:20%;
+	font-size:1.5em;
+	padding:10px;
+}
+input[type=submit1]
+{
+	width:20%;
+	font-size:1.5em;
+	padding:10px;
+}
+input[id=extra]
+{
+	width:20%;
+	font-size:1.5em;
+	padding:10px;
+}
+
+.success{
+	color:green;
+	padding:25px;
+	text-align:center;
+	font-size:1.3em;
+}
+form fieldset a{
+	width:50px;
+	height:50px;
+	padding:10px;
+
+}
+label {
+	background-color: #efefef;
+	padding: 5px;
+}
+.log{
+width:100px;
+height:50px;
+float:right;
+text-align:center;
+font-size:28px;
+color: black;
+border: 1px solid;
+background-color: #efefef;
+}
+
+.log a:hover{
+	color: white;
+}
+.log a{
+	color: black;
+}
+	</style>
+	<body>
+
+
+			<header ><a href="index.html">
+			<img src="images/hello.png">
+			<span class="sp">Holiday Resort</span>
+			</a>
+
+			</header>
+		<div id="page">
+			<div id= "P1">
+			<table height="50px" width="1205px" cellpadding="" cellspacing="">
+			<tr>
+			<td><a href="index.html">Home<a></td>
+			<td><a href="aboutus.html">About Us<a></td>
+			<td><a href="services.html">Service<a></td>
+			<td><a href="gallery.html">Gallery<a></td>
+			<td><a href="reserve.html">Reserve<a></td>
+			<td><a href="contact.html">Contact<a></td>
+			</tr>
+			</table>
+			</div>
+			<table class="mb-2 mt-2" height="50px" width="1200px" border="0">
+				<tr class="bg-grey">
+					<td width="500" height="50" align="center"><span id="date" class="date-c"></span><span id="greets" class="greets-c"></span></td>
+				</tr>
+			</table>
+
+</div>
+<script>
+
+</script>
+
+<form id="form" action="" method="post">
+			<fieldset>
+				<legend>BOOK HOLIDAY RESORT</legend>
+				<div class="container">
+					<div class="row">
+						<div class="col-3">
+							<label> First Name:
+						</div>
+						<div class="col-3"><input id="fname" type="text" name="username">
+					</label></div>
+						<div class="col-3">
+							<label> Last Name :
+						</div>
+						<div class="col-3">
+							<input id="lname" type="text" name="username">
+						</label>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-3">
+							<label> Address :
+						</div>
+						<div class="col-3">
+							<input id="address" type="text" name="address">
+						</label>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-3">
+							<label> Phone No :
+						</div>
+						<div class="col-3">
+							<input id="phone" type="number" name="Phone">
+						</label>
+						</div>
+					</div>
+
+					<br>
+					<div class="row">
+						<div class="col-3">
+							<label> Email :
+						</div>
+						<div class="col-3">
+							<input id="email" type="email" name="email">
+						</label>
+						</div>
+					</div>
+						<br><br>
+					<div class="row">
+						<div class="col-3">
+							<label for="ex">Rooms : </label>
+						</div>
+						<div class="col-3">
+							<select id="room" name="level" >
+							<option value="">Select a Room</option>
+							<option value="deluxe">Deluxe Room</option>
+							<option value="sdeluxe">Super Deluxe</option>
+							<option value="royal">Royal</option>
+							<option value="BS">Business Suite</option>
+							<option value="Honey">Honeymoon Suite</option>
+							</select>
+						</div>
+						<div class="col-3">
+							<label for="ext">Extra : </label>
+						</div>
+						<div class="col-3">
+							<select id="extra" name="level" >
+							<option value="">Select a Package</option>
+							<option value="bunjee">Bunjee Jump</option>
+							<option value="Trekking">Trekking</option>
+							<option value="Rafting">Rafting</option>
+							<option value="Camping">Camping</option>
+							<option value="paragliding">Paragliding</option>
+							<option value="boating">Boating</option>
+							<option value="Zip-Flyer">Zip-Flyer</option>
+							<option value="Jungle safari">Jungle Safari</option>
+
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<label>Payment:</label>
+						</div>
+						<div class="col-3">
+							<label>
+							<input type="radio" name="payment" value="yes"/> Visa
+							</label>
+						</div>
+						<div class="col-3">
+							<label>
+							<input type="radio" name="payment" value="yes"/> Master Card
+							</label>
+						</div>
+						<div class="col-3">
+							<label>
+							<input type="radio" name="payment" value="no"/> Paypal
+							</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+						</p>
+									<label> Card Number :
+						</div>
+						<div class="col-3">
+							<input id="card" type="number" name="card">
+						</label>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-3">
+							<label> Advance Amount :</label>
+						</div>
+						<div class="col-3 text-primary price">
+						<label> Rs 1000/- </label>
+						</div>
+					</div>
+
+				</div>
+					<br>
+				<input type="submit" value="Book Now" />
+				<p class="log"> <a href="login.html" class="pb-2">Login</a></p>
+				<br />
+				<p id="errorMessage" class="error">
+				</p>
+			</fieldset>
+		</form>
+		<p id="successMessage" class="success">
+		</p>
+		<hr class="fix">
+		<div class="footer">
+		<a href="https://www.viber.com/" target="_blank"><img src="images/logo/vb.png" width="50" height="50"></img> </a>
+		<a href="https://www.twitter.com/" target="_blank"><img src="images/logo/twt.png" width="50" height="50"></img> </a>
+		<a href="https://www.facebook.com/" target="_blank"><img src="images/logo/fb.png" width="50" height="50"></img> </a>
+		<a href="https://www.instagram.com/" target="_blank"><img src="images/logo/in.jpg" width="50" height="50"></img> </a>
+		<a href="https://www.snapchat.com/" target="_blank"><img src="images/logo/sc.png" width="50" height="50"></img> </a>
+
+		</div>
+
+		<script src="new.js"></script>
+		<script src="slider.js"></script>
+
+	</body>
+</html>
